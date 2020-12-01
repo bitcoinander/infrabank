@@ -1,0 +1,594 @@
+body {
+    -webkit-text-size-adjust: none;
+}
+
+
+/* Menu  Estrutura*/
+
+html,body,span,p,form,img,a,ul,ol,li,table,tr,td,div {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 70px;
+    background-color: #232A31;
+    padding: 0 2em;
+    box-sizing: border-box;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.navbar-items {
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+    height: 35px;
+    line-height: 80px;
+    margin: 0;
+    right: 0;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+/* --Final do Menu--*/
+
+/* Banner Principal*/
+.banner {
+    background: url('img/Background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 18vh;
+    position: relative;
+}
+
+
+.banner h1,
+.banner p {
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.banner h1 {
+    font-size: 60px;
+}
+
+.banner p {
+    font-size: 30px;
+}
+
+/* ---Final do Banner---*/
+
+/* botoes Estrutura*/
+
+.button {
+    font-size: 1.2rem;
+    font-family: Verdana, sans-serif;
+    text-decoration:none; 
+    text-transform: none;
+    color: white;
+    background: #232A31;
+    border: 2px solid #36414d;
+    border-width: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    border: 2px solid  #ffc400;
+    background: #404142;;
+}
+
+/* --- Final Botoes ---*/
+
+
+/* Títulos, Textos e Parágrafos*/
+h1 {
+    color: #ffffff;
+    margin-left: 10;
+    font-size: 30px;
+    text-align: center;
+    font-family:  Verdana, sans-serif;
+}
+.titulo{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding-right: 0.3em;
+    font-family:  Verdana, sans-serif;
+}
+
+.titulo1{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: left;
+    font-family:  Verdana, sans-serif;
+}
+
+
+h2{
+    color: black;
+    margin-left: 30;
+    font-size: 30px;
+    text-align: center;
+    font-family:  Verdana, sans-serif;
+
+}
+
+h4{
+    color: #232A31;
+    margin-left: 30;
+    font-size: 30px;
+    text-align: center;
+    font-family:  Verdana, sans-serif;
+
+}
+
+.rod {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 30;
+    font-family: Verdana, sans-serif;
+    padding: 15px;
+}
+
+.paragrafo {
+    color: #ffffff;
+    text-align: center;
+    margin-left: -1em;
+    font-size: 20px;
+    font-family: 
+}
+
+.paragrafo1 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 35px;
+    font-family: Verdana, sans-serif;
+}
+
+.paragrafo2{
+    color: #ffffff;
+    text-align: left;
+    font-size: 50px;
+    font-family: Verdana, sans-serif;
+}
+
+strong {
+    font-style: normal;
+    color: #ffc400;
+}
+
+/* --- Final Títulos, Textos e Parágrafos---*/
+
+/* Galeria*/
+
+div.galeria {
+    border-radius: 8px;
+  }
+  
+  div.galeria:hover {
+    border-radius: 8px;
+  }
+  
+  div.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+.galeria:hover {
+    background: #fb7100;;
+}
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+/* ---Final Galeria ---*/
+
+/* ---Galeria 2 ----*/
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #ff8800;
+  position: relative;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.border{
+  border-radius: 0.8px;
+  width: 50px;
+  height: 4px;
+  margin: 100px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 1.9s;
+  margin: auto;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) ;
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+    width: 100%;
+    height: 100%
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+    width: 100%;
+    height: 100%
+  }
+}
+
+@media screen and (max-width:300px) {
+  .gallery-section .image{
+    flex: 100%;
+    width: 100%;
+    height: 100%
+
+  }
+}
+
+/* Final da Galeria 2 --- /*
+
+/* pradrão para telas menores*/
+  
+  @media only screen and (max-width: 700px) {
+    .paragrafo {
+      width: 49.99999%;
+      margin: 6px 0;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .paragrafo {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .paragrafo1 {
+      width: 49.99999%;
+      margin: 3px 0;
+      text-align: left;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .paragrafo1 {
+      width: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .paragrafo2 {
+      width: 49.99999%;
+      margin: 5px 0;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .paragrafo2 {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .image{
+      float: right;
+      opacity: 0.2;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    #celular {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .image {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .image2 {
+      padding: 100px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .image2 {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .navbar-container {
+      padding: 10px;
+    }
+  } 
+    
+  @media only screen and (max-width: 500px) {
+    .navbar-container  {
+      width: 100%;
+     }
+    }
+      
+  @media only screen and (max-width: 700px) {
+    .banner {
+      padding: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .banner {
+      width: 100%;
+    }
+  } 
+
+  @media only screen and (max-width: 700px) {
+    .login {
+      padding: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .login {
+      width: 100%;
+    }
+  } 
+
+@media only screen and (max-width: 700px) {
+    .laranja2 {
+      margin-top: 163%;
+      padding: 10em;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .laranja2 {
+      width: 100%;
+    }
+  }
+
+  
+/* --- Final pradrão para telas menores--- */
+  
+/* Fundo Cinza */
+
+  .cinza {
+    background-color: #232A31;
+    text-align: center;
+    padding: 5em 0;
+}
+
+}
+.cinza .glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.cinza .glass {
+    padding: 20px;
+    
+}
+/* --- Final do Fundo Cinza--- */
+
+/* Fundo Laranja */
+.laranja {
+    background-color: #fa7900;
+    text-align: center;
+    padding: 5em 0;
+}
+
+}
+.laranja .glass1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.laranja .glass1 {
+    padding: 20px;
+}
+/* ---Final do Fundo Laranja --- */
+
+/* Segundo Fundo Laranja maior */
+
+.laranja2 {
+    background-color: #fa7900;
+    padding: 5em 0;
+}
+
+.laranja2 .glass2 {
+    padding: 50px;
+}
+
+}
+.laranja2 .glass2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+/* ---Final do Fundo Laranja 2 --- */
+
+.image{
+    float: right;
+    margin-top: -12em;
+
+}
+
+.image2{
+    float: right;
+    margin-top: -23em;
+    position: initial;
+
+}
+.logo{
+   float: none;
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, sans-serif;
+    margin-top: 15px;
+    position: absolute;
+}
+
+ #celular{
+    width: 300px;
+    float: right;
+    margin-top: -15em;
+  }
+  
+/* ---Tela de Login --- */
+
+.login{
+  width: 500px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #232A31;
+  border-radius: 50px;
+
+  text-align: center;
+}
+
+.login h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.login input[type = "text"],.login input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ffffff;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 50px;
+  transition: 0.25s;
+}
+.login input[type = "text"]:focus,.login input[type = "password"]:focus{
+  width: 280px;
+  border-color: #ff7300;
+}
+.login input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ff6600;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.login input[type = "submit"]:hover{
+  background: #ff6600;
+}
+
+.rodapé{
+    background-color:#232A31;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    float: none;
+    text-align: center;
+}
